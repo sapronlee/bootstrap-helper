@@ -49,6 +49,8 @@ module BootstrapHelper
         end
         return content_tag(:ul, crumb, :class => "breadcrumb")
       end
+    
+    end
 
   end
   
