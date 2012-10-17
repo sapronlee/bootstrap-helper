@@ -14,7 +14,7 @@ gem 'bootstrap_helper'
 or you can install from latest build;
 
 ``` ruby
-gem 'bootstrap_helper', :git => "git://github.com/xdite/bootstrap-helper.git"
+gem 'bootstrap_helper', :git => "git://github.com/sapronlee/bootstrap-helper.git"
 ```
 
 ## USAGE
@@ -24,13 +24,13 @@ gem 'bootstrap_helper', :git => "git://github.com/xdite/bootstrap-helper.git"
 
 #### SETUP
 
-edit your `config/application.rb `
+edit your `config/application.rb`
 
 	SITE_NAME = "YOUR SITE NAME"
 
 in  `application.html.erb`, replace `<title>` with 
 
-	<%= render_page_title %> 
+	<%= render_page_title %>
 
 define page title in your action 
 
