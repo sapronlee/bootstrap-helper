@@ -23,7 +23,7 @@ module BootstrapHelper
         if title && url
           @breadcrumbs.push("<a href=#{url}>#{title}</a>".html_safe)
         elsif title
-          @breadcrumbs.push("<span>#{title}</span>".html_safe)
+          @breadcrumbs.push("<a href=\"#\" class=\"current\">#{title}</a>".html_safe)
         end
       end
 
