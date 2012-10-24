@@ -40,14 +40,14 @@ module BootstrapHelper
 
     module Helpers
 
-      def render_breadcrumb
+      def render_breadcrumb(options = {})
         return "" if @breadcrumbs.size <= 0
         crumb = "".html_safe
 
         @breadcrumbs.each do |c|
-          crumb += content_tag(:li, c)
+          crumb += content_tag(:li, c, :class => "#{options[:li_class]}")
         end
-        return content_tag(:ul, crumb, :class => "breadcrumb")
+        return content_tag(:ul, crumb, :class => "breadcrumb #{options[:class]}")
       end
     
     end
